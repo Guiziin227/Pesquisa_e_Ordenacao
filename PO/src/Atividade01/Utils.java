@@ -85,7 +85,6 @@ public class Utils {
      */
     public static void carregarNumerosArquivo(ArrayList<Integer> numeros, String nomeArquivo) {
         try (BufferedReader reader = new BufferedReader(new FileReader(nomeArquivo))) {
-            numeros.clear();
             String linha;
             while ((linha = reader.readLine()) != null) {
                 if (!linha.trim().isEmpty()) {
@@ -124,7 +123,6 @@ public class Utils {
      */
     public static void carregarPalavrasArquivo(ArrayList<String> palavras, String nomeArquivo) {
         try (BufferedReader reader = new BufferedReader(new FileReader(nomeArquivo))) {
-            palavras.clear();
             String linha;
             while ((linha = reader.readLine()) != null) {
                 if (!linha.trim().isEmpty()) {
